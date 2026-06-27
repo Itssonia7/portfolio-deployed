@@ -5,7 +5,7 @@
  *           Scroll Reveal, Animated Counters, and Simulated Contact Form.
  */
 
-document.addEventListener('DOMContentLoaded', () => {
+const initPortfolio = () => {
 
     // ==========================================================================
     // 1. Scroll Progress Indicator
@@ -121,20 +121,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const statNumbers = document.querySelectorAll('.stat-number');
     let countersStarted = false;
 
-    // IntersectionObserver for Reveal Animations
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target);
-            }
+    // IntersectionObserver for Reveal Animations with Fallback
+    if (!('IntersectionObserver' in window)) {
+        revealElements.forEach(el => el.classList.add('active'));
+    } else {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
         });
-    }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
-    });
 
-    revealElements.forEach(el => revealObserver.observe(el));
+        revealElements.forEach(el => revealObserver.observe(el));
+    }
 
     // Stats Counter Function
     const animateCounters = () => {
@@ -391,4 +395,10 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Oops! There was a problem submitting your message. Please try again or email directly.");
         });
     });
-});
+};
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPortfolio);
+} else {
+    initPortfolio();
+}

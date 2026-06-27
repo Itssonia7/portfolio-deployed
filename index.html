@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Progressive Enhancement: Detect if JS is enabled -->
+    <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
 <body>
 
@@ -47,7 +49,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container hero-container grid-2">
-            <div class="hero-content reveal">
+            <div class="hero-content fade-in-up">
                 <div class="hero-badge">
                     <span class="pulse-dot"></span> Available for Internships & Projects
                 </div>
@@ -67,7 +69,7 @@
                     <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Contact Me</a>
                 </div>
             </div>
-            <div class="hero-image-wrapper reveal delay-1">
+            <div class="hero-image-wrapper fade-in-up delay-1">
                 <div class="hero-image-bg"></div>
                 <img src="assets/images/hero-illustration.png" alt="Sonia Nanwani - Portfolio Illustration" class="hero-image" id="hero-img">
             </div>
