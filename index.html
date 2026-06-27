@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonia Nanwani | Computer Science Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Sonia Nanwani, a second-year Computer Science Engineering student passionate about AI, Machine Learning, Cybersecurity, and Software Development.">
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Sonia<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container grid-2">
+            <div class="hero-content reveal">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span> Available for Internships & Projects
+                </div>
+                <h1 class="hero-title">Sonia Nanwani</h1>
+                <h2 class="hero-subtitle">B.Tech CSE & BS Data Science Student</h2>
+                <div class="hero-tags">
+                    <span class="tag">AI</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Cybersecurity</span>
+                    <span class="tag">Software Development</span>
+                </div>
+                <p class="hero-description">
+                    I am a Computer Science Engineering and Data Science student (Batch of 2028) pursuing a dual degree. I am passionate about building intelligent software systems that solve meaningful real-world problems, with focus areas in AI, Machine Learning, and Cybersecurity.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary" id="btn-hero-projects">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal delay-1">
+                <div class="hero-image-bg"></div>
+                <img src="assets/images/hero-illustration.png" alt="Sonia Nanwani - Portfolio Illustration" class="hero-image" id="hero-img">
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about" aria-label="Scroll down to About section">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-chevron-down scroll-arrow"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="about-section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="grid-about reveal delay-1">
+                <!-- Left Bio Column -->
+                <div class="about-card main-bio-card">
+                    <div class="card-icon-accent"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3 class="about-card-title">My Journey</h3>
+                    <p class="about-text">
+                        I am a dual-degree student pursuing a B.Tech in Computer Science Engineering alongside an online BS in Data Science & Applications. Driven by curiosity and a passion for technology, I enjoy developing AI-powered systems, exploring cybersecurity, and building software that has a real-world impact.
+                    </p>
+                    <div class="education-block">
+                        <h4 class="education-title"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+                        <div class="education-item" style="padding-bottom: 20px;">
+                            <h5 class="edu-degree">Bachelor of Technology</h5>
+                            <p class="edu-major">Computer Science Engineering</p>
+                            <span class="edu-year">Batch of 2028</span>
+                            <span class="edu-location"><i class="fa-solid fa-location-dot"></i> India</span>
+                        </div>
+                        <div class="education-item">
+                            <h5 class="edu-degree">Bachelor of Science (BS)</h5>
+                            <p class="edu-major">Data Science & Applications</p>
+                            <span class="edu-year">Online Dual Degree</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Stats/Dashboard Column -->
+                <div class="about-stats-grid">
+                    <div class="stat-card reveal delay-2">
+                        <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-label">Projects Built</p>
+                    </div>
+                    <div class="stat-card reveal delay-3">
+                        <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="4">0</span>
+                        </div>
+                        <p class="stat-label">Hackathons Joined</p>
+                    </div>
+                    <div class="stat-card reveal delay-4">
+                        <div class="stat-icon"><i class="fa-solid fa-gears"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-label">Technologies Mastered</p>
+                    </div>
+                    <div class="stat-card reveal delay-5">
+                        <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="2">0</span>
+                        </div>
+                        <p class="stat-label">Degrees Pursued</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">My Technical Toolkit</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">A curated collection of languages, frameworks, tools, and methodologies I work with.</p>
+            </div>
+
+            <div class="skills-grid reveal delay-1">
+                <!-- Programming -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-box"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="skill-category-title">Programming</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge"><i class="fa-solid fa-c"></i> C</span>
+                        <span class="skill-badge"><i class="fa-solid fa-hashtag"></i> C++</span>
+                        <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-badge"><i class="fa-brands fa-java"></i> Java</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="skill-category-title">Web Development</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-badge"><i class="fa-solid fa-leaf"></i> Flask</span>
+                    </div>
+                </div>
+
+                <!-- Artificial Intelligence -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-box"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="skill-category-title">Artificial Intelligence</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Google Gemini API</span>
+                        <span class="skill-badge"><i class="fa-solid fa-keyboard"></i> Prompt Engineering</span>
+                        <span class="skill-badge"><i class="fa-solid fa-eye"></i> Computer Vision</span>
+                        <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Function Calling</span>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="skill-category-title">Cybersecurity</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge"><i class="fa-solid fa-magnifying-glass"></i> Nmap</span>
+                        <span class="skill-badge"><i class="fa-solid fa-bug"></i> CVE Analysis</span>
+                        <span class="skill-badge"><i class="fa-solid fa-terminal"></i> Penetration Testing</span>
+                        <span class="skill-badge"><i class="fa-solid fa-unlock-keyhole"></i> Vulnerability Assessment</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-box"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="skill-category-title">Database</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge"><i class="fa-solid fa-table"></i> SQL</span>
+                        <span class="skill-badge"><i class="fa-solid fa-server"></i> MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3 class="skill-category-title">Tools & Environment</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-badge"><i class="fa-solid fa-laptop-code"></i> VS Code</span>
+                        <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux (Ubuntu)</span>
+                    </div>
+                </div>
+
+                <!-- Currently Learning -->
+                <div class="skill-category-card currently-learning-card">
+                    <div class="skill-header">
+                        <div class="skill-icon-box"><i class="fa-solid fa-book-open"></i></div>
+                        <h3 class="skill-category-title">Currently Learning</h3>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="skill-badge learning"><i class="fa-solid fa-robot"></i> Machine Learning</span>
+                        <span class="skill-badge learning"><i class="fa-solid fa-gears"></i> Backend Development</span>
+                        <span class="skill-badge learning"><i class="fa-solid fa-diagram-project"></i> Data Structures & Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Intelligent systems, security automation, and impactful software engineering projects.</p>
+            </div>
+
+            <div class="projects-grid reveal delay-1">
+                <!-- Project 1: EcoLens AI -->
+                <div class="project-card" data-project="ecolens">
+                    <div class="project-image-box">
+                        <!-- Abstract Technology Illustration representation -->
+                        <div class="project-illustration ecolens-illus">
+                            <div class="illus-circle"></div>
+                            <div class="illus-scan-line"></div>
+                            <i class="fa-solid fa-recycle illus-icon"></i>
+                            <i class="fa-solid fa-eye-dropper illus-small-icon"></i>
+                        </div>
+                        <div class="project-award-badge">
+                            <i class="fa-solid fa-trophy"></i> GDG Sangli TechSprint Finalist
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">EcoLens AI</h3>
+                        <h4 class="project-subtitle">AI for Sustainability</h4>
+                        <p class="project-description">
+                            An AI-powered plastic waste classification system built using the Google Gemini Vision API. The application identifies different categories of plastic waste from images and promotes sustainable recycling practices.
+                        </p>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Google Gemini Vision API</span>
+                            <span class="tech-badge">Computer Vision</span>
+                            <span class="tech-badge">Artificial Intelligence</span>
+                        </div>
+                        <button class="btn-learn-more" id="btn-learn-ecolens">Learn More <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Project 2: CyberGuard AI -->
+                <div class="project-card" data-project="cyberguard">
+                    <div class="project-image-box">
+                        <div class="project-illustration cyberguard-illus">
+                            <div class="illus-shield"></div>
+                            <div class="illus-nodes">
+                                <span class="dot d1"></span>
+                                <span class="dot d2"></span>
+                                <span class="dot d3"></span>
+                            </div>
+                            <i class="fa-solid fa-shield-halved illus-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">CyberGuard AI</h3>
+                        <h4 class="project-subtitle">Autonomous Cybersecurity Agent</h4>
+                        <p class="project-description">
+                            An AI-powered autonomous penetration testing assistant built using Gemini 2.0 Flash Function Calling to automate security assessments and vulnerability mappings.
+                        </p>
+                        
+                        <!-- Mini visual pipeline in card -->
+                        <div class="mini-pipeline">
+                            <div class="pipe-step" title="Network Scan">Scan</div>
+                            <div class="pipe-arrow"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="pipe-step" title="Service Detection">Detect</div>
+                            <div class="pipe-arrow"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="pipe-step" title="CVE Mapping">Map</div>
+                            <div class="pipe-arrow"><i class="fa-solid fa-angle-right"></i></div>
+                            <div class="pipe-step" title="Exploit Pipeline">Exploit</div>
+                        </div>
+
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Gemini 2.0 Flash</span>
+                            <span class="tech-badge">Function Calling</span>
+                            <span class="tech-badge">Nmap</span>
+                            <span class="tech-badge">Cybersecurity</span>
+                            <span class="tech-badge">CVE Mapping</span>
+                        </div>
+                        <button class="btn-learn-more" id="btn-learn-cyberguard">Learn More <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Project 3: SomaSense AI -->
+                <div class="project-card" data-project="somasense">
+                    <div class="project-image-box">
+                        <div class="project-illustration somasense-illus">
+                            <div class="illus-waves">
+                                <div class="wave w1"></div>
+                                <div class="wave w2"></div>
+                            </div>
+                            <i class="fa-solid fa-heart-pulse illus-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">SomaSense AI</h3>
+                        <h4 class="project-subtitle">AI for Human Well-being</h4>
+                        <p class="project-description">
+                            An AI application exploring the relationships between human emotions and perceived physiological impacts, combining AI with holistic and somatic philosophies like Ho'oponopono.
+                        </p>
+                        <div class="project-tech-badges">
+                            <span class="tech-badge">Artificial Intelligence</span>
+                            <span class="tech-badge">Natural Language Processing</span>
+                            <span class="tech-badge">Emotion Analysis</span>
+                            <span class="tech-badge">Wellness Technology</span>
+                        </div>
+                        <button class="btn-learn-more" id="btn-learn-somasense">Learn More <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Key Achievements</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Highlights of hackathons, focus areas, and building impactful solutions.</p>
+            </div>
+
+            <div class="achievements-grid reveal delay-1">
+                <!-- Achievement 1 -->
+                <div class="achievement-card">
+                    <div class="achievement-icon-wrapper">
+                        <i class="fa-solid fa-trophy trophy-colored"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">GDG Sangli TechSprint Finalist</h3>
+                        <p class="achievement-desc">Recognized as a finalist for designing and presenting innovative technical systems at GDG Sangli's hackathon event.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="achievement-card">
+                    <div class="achievement-icon-wrapper">
+                        <i class="fa-solid fa-keyboard keyboard-colored"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Active Hackathon Participant</h3>
+                        <p class="achievement-desc">Regularly competing in regional and national hackathons, brainstorming solutions, and building high-fidelity working prototypes under tight deadlines.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="achievement-card">
+                    <div class="achievement-icon-wrapper">
+                        <i class="fa-solid fa-brain brain-colored"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Passionate AI & Security Student</h3>
+                        <p class="achievement-desc">Deeply committed to learning AI architecture, LLM agent pipelines, function-calling triggers, and penetration testing automation.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="achievement-card">
+                    <div class="achievement-icon-wrapper">
+                        <i class="fa-solid fa-leaf leaf-colored"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">AI for Sustainability & Wellness</h3>
+                        <p class="achievement-desc">Actively building tools like EcoLens AI and SomaSense AI to solve ecological challenges and promote somatic emotional well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Have an internship, project suggestion, or just want to connect? Reach out!</p>
+            </div>
+
+            <div class="grid-contact reveal delay-1">
+                <!-- Info cards column -->
+                <div class="contact-info-column">
+                    <h3 class="contact-info-title">Contact Information</h3>
+                    <p class="contact-info-desc">Feel free to connect with me through my social channels or send an email directly. I'll get back to you as soon as possible.</p>
+                    
+                    <div class="contact-methods">
+                        <!-- Email -->
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-content">
+                                <span class="info-label">Email</span>
+                                <a href="mailto:soniananvani7@gmail.com" class="info-value" id="contact-email">soniananvani7@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-content">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">India</span>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="info-content">
+                                <span class="info-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/sonia-nanwani-8a8724329/" target="_blank" rel="noopener noreferrer" class="info-value">linkedin.com/in/sonia-nanwani-8a8724329</a>
+                            </div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="info-content">
+                                <span class="info-label">GitHub</span>
+                                <a href="https://github.com/Itssonia7" target="_blank" rel="noopener noreferrer" class="info-value">github.com/Itssonia7</a>
+                            </div>
+                        </div>
+
+                        <!-- LeetCode -->
+                        <div class="contact-info-item">
+                            <div class="info-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="info-content">
+                                <span class="info-label">LeetCode</span>
+                                <a href="https://leetcode.com/u/itssonia7/" target="_blank" rel="noopener noreferrer" class="info-value">leetcode.com/u/itssonia7</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-wrapper">
+                        <h4>Follow My Work</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sonia-nanwani-8a8724329/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://leetcode.com/u/itssonia7/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Profile" class="social-icon-btn" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+                            <a href="mailto:soniananvani7@gmail.com" aria-label="Send Email" class="social-icon-btn"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form column -->
+                <div class="contact-form-card">
+                    <h3 class="form-title">Send a Message</h3>
+                    <form id="portfolio-contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="form-name" name="name" required placeholder=" " class="form-input">
+                            <label for="form-name" class="form-label">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="form-email" name="email" required placeholder=" " class="form-input">
+                            <label for="form-email" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" name="message" rows="5" required placeholder=" " class="form-input"></textarea>
+                            <label for="form-message" class="form-label">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-spinner hidden"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+                            <span class="btn-success hidden"><i class="fa-solid fa-check"></i> Sent!</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <span class="logo-accent">&lt;</span>Sonia<span class="logo-accent"> /&gt;</span>
+            </div>
+            <p class="footer-text">Designed using AI</p>
+            <p class="copyright">&copy; 2026 Sonia Nanwani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" aria-label="Scroll back to top" class="hidden-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Modals (Learn More Overlays) -->
+    <!-- Modal Backdrop -->
+    <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
+        <div class="modal-content-container">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Loaded dynamically by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
