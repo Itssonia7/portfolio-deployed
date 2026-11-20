@@ -1,562 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonia Nanwani | Computer Science Engineering Portfolio</title>
-    <meta name="description" content="Portfolio of Sonia Nanwani, a second-year Computer Science Engineering student passionate about AI, Machine Learning, Cybersecurity, and Software Development.">
-    <!-- Premium Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Main Style Sheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Progressive Enhancement: Detect if JS is enabled -->
-    <script>document.documentElement.classList.add('js-enabled');</script>
-    <!-- Umami Analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="d19c91ad-91b5-42a9-84c0-8400cfb4765d"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonia Nanwani | Systems, Backend &amp; Applied AI Engineer</title>
+  <meta name="description" content="Portfolio of Sonia Nanwani — B.Tech CSE at WCE Sangli and BS Data Science at IIT Madras. Specializing in C++20/Go systems, backend architecture, and RAG pipelines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Sonia<span>.dev</span></a>
 
-    <!-- Scroll Progress Indicator -->
-    <div id="scroll-progress-container">
-        <div id="scroll-progress-bar"></div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </header>
 
-    <!-- Navigation Header -->
-    <header id="main-header">
-        <div class="container header-container">
-            <a href="#home" class="logo" id="nav-logo">
-                <span class="logo-accent">&lt;</span>Sonia<span class="logo-accent"> /&gt;</span>
-            </a>
-            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
-                <ul>
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="status-pill">
+          <span class="pulse-dot"></span> Open to SWE &amp; Systems Research Internships (2027)
+        </span>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-title">Sonia <span class="accent">Nanwani</span></h1>
+        <h2 class="hero-subtitle">Systems, Backend &amp; Applied AI Engineer</h2>
+        <p class="hero-desc">
+          Third-year B.Tech Computer Science student at <strong>WCE Sangli</strong> (8.23 CGPA) pursuing a dual BS in Data Science &amp; Applications at <strong>IIT Madras</strong>. I build low-level C++20/Go systems, production RAG pipelines, and resilient backend architectures.
+        </p>
+
+        <div class="hero-actions">
+          <a href="assets/Sonia_Nanwani_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            Explore Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container hero-container grid-2">
-            <div class="hero-content fade-in-up">
-                <div class="hero-badge">
-                    <span class="pulse-dot"></span> Available for Internships & Projects
-                </div>
-                <h1 class="hero-title">Sonia Nanwani</h1>
-                <h2 class="hero-subtitle">B.Tech CSE & BS Data Science Student</h2>
-                <div class="hero-tags">
-                    <span class="tag">AI</span>
-                    <span class="tag">Machine Learning</span>
-                    <span class="tag">Cybersecurity</span>
-                    <span class="tag">Software Development</span>
-                </div>
-                <p class="hero-description">
-                    I am a Computer Science Engineering and Data Science student (Batch of 2028) pursuing a dual degree. I am passionate about building intelligent software systems that solve meaningful real-world problems, with focus areas in AI, Machine Learning, and Cybersecurity.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary" id="btn-hero-projects">View Projects <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper fade-in-up delay-1">
-                <div class="hero-image-bg"></div>
-                <img src="assets/images/hero-illustration.png" alt="Sonia Nanwani - Portfolio Illustration" class="hero-image" id="hero-img">
-            </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/sonia-nanwani-8a8724329" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/u/itssonia7" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+          <a href="https://www.codechef.com/users/its_sonia" target="_blank" rel="noopener" aria-label="CodeChef"><i class="fa-solid fa-terminal"></i></a>
+          <a href="mailto:soniananvani7@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
-        <div class="hero-scroll-indicator">
-            <a href="#about" aria-label="Scroll down to About section">
-                <span>Scroll Down</span>
-                <i class="fa-solid fa-chevron-down scroll-arrow"></i>
-            </a>
+      </div>
+
+      <!-- Developer Terminal Snapshot -->
+      <div class="hero-terminal reveal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">sonia@wce-sangli: ~/profile</span>
         </div>
-    </section>
-
-    <!-- About & Education Section -->
-    <section id="about" class="about-section bg-light">
-        <div class="container">
-            <div class="section-header text-center reveal">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="grid-about reveal delay-1">
-                <!-- Left Bio Column -->
-                <div class="about-card main-bio-card">
-                    <div class="card-icon-accent"><i class="fa-solid fa-user-graduate"></i></div>
-                    <h3 class="about-card-title">My Journey</h3>
-                    <p class="about-text">
-                        I am a dual-degree student pursuing a B.Tech in Computer Science Engineering alongside an online BS in Data Science & Applications. Driven by curiosity and a passion for technology, I enjoy developing AI-powered systems, exploring cybersecurity, and building software that has a real-world impact.
-                    </p>
-                    <div class="education-block">
-                        <h4 class="education-title"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
-                        <div class="education-item" style="padding-bottom: 20px;">
-                            <h5 class="edu-degree">Bachelor of Technology</h5>
-                            <p class="edu-major">Computer Science Engineering</p>
-                            <span class="edu-year">Batch of 2028</span>
-                            <span class="edu-location"><i class="fa-solid fa-location-dot"></i> India</span>
-                        </div>
-                        <div class="education-item">
-                            <h5 class="edu-degree">Bachelor of Science (BS)</h5>
-                            <p class="edu-major">Data Science & Applications</p>
-                            <span class="edu-year">Online Dual Degree</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Stats/Dashboard Column -->
-                <div class="about-stats-grid">
-                    <div class="stat-card reveal delay-2">
-                        <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                        <div class="stat-number-wrapper">
-                            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
-                        </div>
-                        <p class="stat-label">Projects Built</p>
-                    </div>
-                    <div class="stat-card reveal delay-3">
-                        <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
-                        <div class="stat-number-wrapper">
-                            <span class="stat-number" data-target="4">0</span>
-                        </div>
-                        <p class="stat-label">Hackathons Joined</p>
-                    </div>
-                    <div class="stat-card reveal delay-4">
-                        <div class="stat-icon"><i class="fa-solid fa-gears"></i></div>
-                        <div class="stat-number-wrapper">
-                            <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
-                        </div>
-                        <p class="stat-label">Technologies Mastered</p>
-                    </div>
-                    <div class="stat-card reveal delay-5">
-                        <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <div class="stat-number-wrapper">
-                            <span class="stat-number" data-target="2">0</span>
-                        </div>
-                        <p class="stat-label">Degrees Pursued</p>
-                    </div>
-                </div>
-            </div>
+        <div class="terminal-body">
+          <p><span class="cmd-prompt">$</span> cat engineer.json</p>
+          <pre class="code-block">{
+  <span class="key">"name"</span>: <span class="str">"Sonia Nanwani"</span>,
+  <span class="key">"degrees"</span>: [
+    <span class="str">"B.Tech CSE @ WCE Sangli (CGPA: 8.23)"</span>,
+    <span class="str">"BS Data Science @ IIT Madras"</span>
+  ],
+  <span class="key">"focus"</span>: [
+    <span class="str">"Compilers &amp; C++17/20"</span>,
+    <span class="str">"Distributed Systems (Go/gRPC)"</span>,
+    <span class="str">"Java 21 / Spring Boot / PostgreSQL"</span>,
+    <span class="str">"Retrieve-Rerank-Fill RAG"</span>
+  ],
+  <span class="key">"highlights"</span>: {
+    <span class="key">"research"</span>: <span class="str">"IIT Bombay CompL Shortlist"</span>,
+    <span class="key">"program"</span>: <span class="str">"Amazon ML Summer School '26"</span>,
+    <span class="key">"dsa_solved"</span>: <span class="num">850</span>
+  }
+}</pre>
+          <p class="terminal-cursor-line"><span class="cmd-prompt">$</span> <span class="cursor">_</span></p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-header text-center reveal">
-                <h2 class="section-title">My Technical Toolkit</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">A curated collection of languages, frameworks, tools, and methodologies I work with.</p>
-            </div>
-
-            <div class="skills-grid reveal delay-1">
-                <!-- Programming -->
-                <div class="skill-category-card">
-                    <div class="skill-header">
-                        <div class="skill-icon-box"><i class="fa-solid fa-code"></i></div>
-                        <h3 class="skill-category-title">Programming</h3>
-                    </div>
-                    <div class="skill-badges">
-                        <span class="skill-badge"><i class="fa-solid fa-c"></i> C</span>
-                        <span class="skill-badge"><i class="fa-solid fa-hashtag"></i> C++</span>
-                        <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
-                        <span class="skill-badge"><i class="fa-brands fa-java"></i> Java</span>
-                    </div>
-                </div>
-
-                <!-- Web Development -->
-                <div class="skill-category-card">
-                    <div class="skill-header">
-                        <div class="skill-icon-box"><i class="fa-solid fa-laptop-code"></i></div>
-                        <h3 class="skill-category-title">Web Development</h3>
-                    </div>
-                    <div class="skill-badges">
-                        <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML</span>
-                        <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                        <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="skill-badge"><i class="fa-solid fa-leaf"></i> Flask</span>
-                    </div>
-                </div>
-
-                <!-- Artificial Intelligence -->
-                <div class="skill-category-card">
-                    <div class="skill-header">
-                        <div class="skill-icon-box"><i class="fa-solid fa-brain"></i></div>
-                        <h3 class="skill-category-title">Artificial Intelligence</h3>
-                    </div>
-                    <div class="skill-badges">
-                        <span class="skill-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Google Gemini API</span>
-                        <span class="skill-badge"><i class="fa-solid fa-keyboard"></i> Prompt Engineering</span>
-                        <span class="skill-badge"><i class="fa-solid fa-eye"></i> Computer Vision</span>
-                        <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Function Calling</span>
-                    </div>
-                </div>
-
-                <!-- Cybersecurity -->
-                <div class="skill-category-card">
-                    <div class="skill-header">
-                        <div class="skill-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h3 class="skill-category-title">Cybersecurity</h3>
-                    </div>
-                    <div class="skill-badges">
-                        <span class="skill-badge"><i class="fa-solid fa-magnifying-glass"></i> Nmap</span>
-                        <span class="skill-badge"><i class="fa-solid fa-bug"></i> CVE Analysis</span>
-                        <span class="skill-badge"><i class="fa-solid fa-terminal"></i> Penetration Testing</span>
-                        <span class="skill-badge"><i class="fa-solid fa-unlock-keyhole"></i> Vulnerability Assessment</span>
-                    </div>
-                </div>
-
-                <!-- Database -->
-                <div class="skill-category-card">
-                    <div class="skill-header">
-                        <div class="skill-icon-box"><i class="fa-solid fa-database"></i></div>
-                        <h3 class="skill-category-title">Database</h3>
-                    </div>
-                    <div class="skill-badges">
-                        <span class="skill-badge"><i class="fa-solid fa-table"></i> SQL</span>
-                        <span class="skill-badge"><i class="fa-solid fa-server"></i> MySQL</span>
-                    </div>
-                </div>
-
-                <!-- Tools -->
-                <div class="skill-category-card">
-                    <div class="skill-header">
-                        <div class="skill-icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                        <h3 class="skill-category-title">Tools & Environment</h3>
-                    </div>
-                    <div class="skill-badges">
-                        <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
-                        <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
-                        <span class="skill-badge"><i class="fa-solid fa-laptop-code"></i> VS Code</span>
-                        <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux (Ubuntu)</span>
-                    </div>
-                </div>
-
-                <!-- Currently Learning -->
-                <div class="skill-category-card currently-learning-card">
-                    <div class="skill-header">
-                        <div class="skill-icon-box"><i class="fa-solid fa-book-open"></i></div>
-                        <h3 class="skill-category-title">Currently Learning</h3>
-                    </div>
-                    <div class="skill-badges">
-                        <span class="skill-badge learning"><i class="fa-solid fa-robot"></i> Machine Learning</span>
-                        <span class="skill-badge learning"><i class="fa-solid fa-gears"></i> Backend Development</span>
-                        <span class="skill-badge learning"><i class="fa-solid fa-diagram-project"></i> Data Structures & Algorithms</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
-        <div class="container">
-            <div class="section-header text-center reveal">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Intelligent systems, security automation, and impactful software engineering projects.</p>
-            </div>
-
-            <div class="projects-grid reveal delay-1">
-                <!-- Project 1: EcoLens AI -->
-                <div class="project-card" data-project="ecolens">
-                    <div class="project-image-box">
-                        <!-- Abstract Technology Illustration representation -->
-                        <div class="project-illustration ecolens-illus">
-                            <div class="illus-circle"></div>
-                            <div class="illus-scan-line"></div>
-                            <i class="fa-solid fa-recycle illus-icon"></i>
-                            <i class="fa-solid fa-eye-dropper illus-small-icon"></i>
-                        </div>
-                        <div class="project-award-badge">
-                            <i class="fa-solid fa-trophy"></i> GDG Sangli TechSprint Finalist
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">EcoLens AI</h3>
-                        <h4 class="project-subtitle">AI for Sustainability</h4>
-                        <p class="project-description">
-                            An AI-powered plastic waste classification system built using the Google Gemini Vision API. The application identifies different categories of plastic waste from images and promotes sustainable recycling practices.
-                        </p>
-                        <div class="project-tech-badges">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">Google Gemini Vision API</span>
-                            <span class="tech-badge">Computer Vision</span>
-                            <span class="tech-badge">Artificial Intelligence</span>
-                        </div>
-                        <button class="btn-learn-more" id="btn-learn-ecolens">Learn More <i class="fa-solid fa-chevron-right"></i></button>
-                    </div>
-                </div>
-
-                <!-- Project 2: CyberGuard AI -->
-                <div class="project-card" data-project="cyberguard">
-                    <div class="project-image-box">
-                        <div class="project-illustration cyberguard-illus">
-                            <div class="illus-shield"></div>
-                            <div class="illus-nodes">
-                                <span class="dot d1"></span>
-                                <span class="dot d2"></span>
-                                <span class="dot d3"></span>
-                            </div>
-                            <i class="fa-solid fa-shield-halved illus-icon"></i>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">CyberGuard AI</h3>
-                        <h4 class="project-subtitle">Autonomous Cybersecurity Agent</h4>
-                        <p class="project-description">
-                            An AI-powered autonomous penetration testing assistant built using Gemini 2.0 Flash Function Calling to automate security assessments and vulnerability mappings.
-                        </p>
-                        
-                        <!-- Mini visual pipeline in card -->
-                        <div class="mini-pipeline">
-                            <div class="pipe-step" title="Network Scan">Scan</div>
-                            <div class="pipe-arrow"><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="pipe-step" title="Service Detection">Detect</div>
-                            <div class="pipe-arrow"><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="pipe-step" title="CVE Mapping">Map</div>
-                            <div class="pipe-arrow"><i class="fa-solid fa-angle-right"></i></div>
-                            <div class="pipe-step" title="Exploit Pipeline">Exploit</div>
-                        </div>
-
-                        <div class="project-tech-badges">
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">Gemini 2.0 Flash</span>
-                            <span class="tech-badge">Function Calling</span>
-                            <span class="tech-badge">Nmap</span>
-                            <span class="tech-badge">Cybersecurity</span>
-                            <span class="tech-badge">CVE Mapping</span>
-                        </div>
-                        <button class="btn-learn-more" id="btn-learn-cyberguard">Learn More <i class="fa-solid fa-chevron-right"></i></button>
-                    </div>
-                </div>
-
-                <!-- Project 3: SomaSense AI -->
-                <div class="project-card" data-project="somasense">
-                    <div class="project-image-box">
-                        <div class="project-illustration somasense-illus">
-                            <div class="illus-waves">
-                                <div class="wave w1"></div>
-                                <div class="wave w2"></div>
-                            </div>
-                            <i class="fa-solid fa-heart-pulse illus-icon"></i>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">SomaSense AI</h3>
-                        <h4 class="project-subtitle">AI for Human Well-being</h4>
-                        <p class="project-description">
-                            An AI application exploring the relationships between human emotions and perceived physiological impacts, combining AI with holistic and somatic philosophies like Ho'oponopono.
-                        </p>
-                        <div class="project-tech-badges">
-                            <span class="tech-badge">Artificial Intelligence</span>
-                            <span class="tech-badge">Natural Language Processing</span>
-                            <span class="tech-badge">Emotion Analysis</span>
-                            <span class="tech-badge">Wellness Technology</span>
-                        </div>
-                        <button class="btn-learn-more" id="btn-learn-somasense">Learn More <i class="fa-solid fa-chevron-right"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements-section">
-        <div class="container">
-            <div class="section-header text-center reveal">
-                <h2 class="section-title">Key Achievements</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Highlights of hackathons, focus areas, and building impactful solutions.</p>
-            </div>
-
-            <div class="achievements-grid reveal delay-1">
-                <!-- Achievement 1 -->
-                <div class="achievement-card">
-                    <div class="achievement-icon-wrapper">
-                        <i class="fa-solid fa-trophy trophy-colored"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">GDG Sangli TechSprint Finalist</h3>
-                        <p class="achievement-desc">Recognized as a finalist for designing and presenting innovative technical systems at GDG Sangli's hackathon event.</p>
-                    </div>
-                </div>
-
-                <!-- Achievement 2 -->
-                <div class="achievement-card">
-                    <div class="achievement-icon-wrapper">
-                        <i class="fa-solid fa-keyboard keyboard-colored"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Active Hackathon Participant</h3>
-                        <p class="achievement-desc">Regularly competing in regional and national hackathons, brainstorming solutions, and building high-fidelity working prototypes under tight deadlines.</p>
-                    </div>
-                </div>
-
-                <!-- Achievement 3 -->
-                <div class="achievement-card">
-                    <div class="achievement-icon-wrapper">
-                        <i class="fa-solid fa-brain brain-colored"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">Passionate AI & Security Student</h3>
-                        <p class="achievement-desc">Deeply committed to learning AI architecture, LLM agent pipelines, function-calling triggers, and penetration testing automation.</p>
-                    </div>
-                </div>
-
-                <!-- Achievement 4 -->
-                <div class="achievement-card">
-                    <div class="achievement-icon-wrapper">
-                        <i class="fa-solid fa-leaf leaf-colored"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3 class="achievement-title">AI for Sustainability & Wellness</h3>
-                        <p class="achievement-desc">Actively building tools like EcoLens AI and SomaSense AI to solve ecological challenges and promote somatic emotional well-being.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section bg-light">
-        <div class="container">
-            <div class="section-header text-center reveal">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="section-divider"></div>
-                <p class="section-subtitle">Have an internship, project suggestion, or just want to connect? Reach out!</p>
-            </div>
-
-            <div class="grid-contact reveal delay-1">
-                <!-- Info cards column -->
-                <div class="contact-info-column">
-                    <h3 class="contact-info-title">Contact Information</h3>
-                    <p class="contact-info-desc">Feel free to connect with me through my social channels or send an email directly. I'll get back to you as soon as possible.</p>
-                    
-                    <div class="contact-methods">
-                        <!-- Email -->
-                        <div class="contact-info-item">
-                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                            <div class="info-content">
-                                <span class="info-label">Email</span>
-                                <a href="mailto:soniananvani7@gmail.com" class="info-value" id="contact-email">soniananvani7@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <!-- Location -->
-                        <div class="contact-info-item">
-                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div class="info-content">
-                                <span class="info-label">Location</span>
-                                <span class="info-value">India</span>
-                            </div>
-                        </div>
-
-                        <!-- LinkedIn -->
-                        <div class="contact-info-item">
-                            <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                            <div class="info-content">
-                                <span class="info-label">LinkedIn</span>
-                                <a href="https://www.linkedin.com/in/sonia-nanwani-8a8724329/" target="_blank" rel="noopener noreferrer" class="info-value">linkedin.com/in/sonia-nanwani-8a8724329</a>
-                            </div>
-                        </div>
-
-                        <!-- GitHub -->
-                        <div class="contact-info-item">
-                            <div class="info-icon"><i class="fa-brands fa-github"></i></div>
-                            <div class="info-content">
-                                <span class="info-label">GitHub</span>
-                                <a href="https://github.com/Itssonia7" target="_blank" rel="noopener noreferrer" class="info-value">github.com/Itssonia7</a>
-                            </div>
-                        </div>
-
-                        <!-- LeetCode -->
-                        <div class="contact-info-item">
-                            <div class="info-icon"><i class="fa-solid fa-code"></i></div>
-                            <div class="info-content">
-                                <span class="info-label">LeetCode</span>
-                                <a href="https://leetcode.com/u/itssonia7/" target="_blank" rel="noopener noreferrer" class="info-value">leetcode.com/u/itssonia7</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links-wrapper">
-                        <h4>Follow My Work</h4>
-                        <div class="social-icons">
-                            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/sonia-nanwani-8a8724329/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://leetcode.com/u/itssonia7/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Profile" class="social-icon-btn" title="LeetCode"><i class="fa-solid fa-code"></i></a>
-                            <a href="mailto:soniananvani7@gmail.com" aria-label="Send Email" class="social-icon-btn"><i class="fa-solid fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Form column -->
-                <div class="contact-form-card">
-                    <h3 class="form-title">Send a Message</h3>
-                    <form id="portfolio-contact-form" action="#" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="form-name" name="name" required placeholder=" " class="form-input">
-                            <label for="form-name" class="form-label">Full Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="form-email" name="email" required placeholder=" " class="form-input">
-                            <label for="form-email" class="form-label">Email Address</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="form-message" name="message" rows="5" required placeholder=" " class="form-input"></textarea>
-                            <label for="form-message" class="form-label">Your Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-spinner hidden"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
-                            <span class="btn-success hidden"><i class="fa-solid fa-check"></i> Sent!</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="main-footer">
-        <div class="container footer-container">
-            <div class="footer-logo">
-                <span class="logo-accent">&lt;</span>Sonia<span class="logo-accent"> /&gt;</span>
-            </div>
-            <p class="footer-text">Designed using AI</p>
-            <p class="copyright">&copy; 2026 Sonia Nanwani. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button id="scroll-to-top" aria-label="Scroll back to top" class="hidden-btn">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- Project Modals (Learn More Overlays) -->
-    <!-- Modal Backdrop -->
-    <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog">
-        <div class="modal-content-container">
-            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
-            <div class="modal-body" id="modal-body-content">
-                <!-- Loaded dynamically by JavaScript -->
-            </div>
-        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Main JavaScript File -->
-    <script src="script.js"></script>
+  <!-- About Me Section (Styled after reference layout) -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-image-card">
+            <img src="assets/images/hero-illustration.png" alt="Sonia Nanwani Developer Illustration" />
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <h2 class="section-heading left">About Me</h2>
+          <p class="about-intro-accent">Hi, My name is Sonia Nanwani</p>
+          <p class="about-bio">
+            I am a third-year Computer Science &amp; Engineering undergraduate at <strong>Walchand College of Engineering, Sangli</strong> (2024–2028) concurrently pursuing an online <strong>BS in Data Science &amp; Applications from IIT Madras</strong>.
+          </p>
+          <p class="about-bio">
+            I enjoy translating systems theory into working software—ranging from a 5-stage C++17 compiler and zero-copy binary serialization engine to distributed Raft consensus stores and production tax-litigation RAG pipelines.
+          </p>
+
+          <!-- 2x2 Numbered Pillars -->
+          <div class="pillars-grid">
+            <div class="pillar-item">
+              <span class="pillar-num">1.</span> Systems &amp; Compilers
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">2.</span> DSA &amp; Algorithms
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">3.</span> Backend &amp; Distributed
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">4.</span> Applied AI &amp; RAG
+            </div>
+          </div>
+
+          <!-- Education Strip -->
+          <div class="edu-cards">
+            <div class="edu-card">
+              <div class="edu-top">
+                <h4>B.Tech — Computer Science &amp; Engineering</h4>
+                <span class="badge">2024 – 2028</span>
+              </div>
+              <p>Walchand College of Engineering (WCE), Sangli • <strong>CGPA: 8.23</strong></p>
+            </div>
+            <div class="edu-card">
+              <div class="edu-top">
+                <h4>BS — Data Science &amp; Applications</h4>
+                <span class="badge">Diploma Level</span>
+              </div>
+              <p>Indian Institute of Technology (IIT) Madras • Online Dual Degree</p>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Animated Metrics Row -->
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <div class="stat-number" data-target="850" data-suffix="+">0</div>
+          <div class="stat-label">DSA Problems Solved</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="8.23" data-decimals="2">0</div>
+          <div class="stat-label">B.Tech CSE CGPA</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-label">Engineering Internships</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-label">Concurrent Degrees</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Leadership Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading">Experience &amp; <span>Leadership</span></h2>
+        <p class="section-sub">Production engineering internships, open-source contributions, and technical community leadership.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Development Engineer (SDE) Intern</h3>
+                <p class="org">Pandit Bhandari &amp; Co. • NoticeDesk</p>
+              </div>
+              <span class="time-badge">Aug 2026 – Present</span>
+            </div>
+            <ul class="exp-list">
+              <li>Engineering <strong>NoticeDesk</strong>, a litigation-first tax operating system for Chartered Accountant firms built with <strong>Python, Java 21, Spring Boot, and PostgreSQL 16 (Row-Level Security)</strong>.</li>
+              <li>Architected and audited a cost-optimized <strong>Retrieve-Rerank-Fill RAG pipeline</strong> combining keyword pre-filtering, Claude Sonnet notice selection, IndianKanoon citation checks, and template hydration.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>AI Web Development Intern</h3>
+                <p class="org">Amigos Foundation</p>
+              </div>
+              <span class="time-badge">Jul 2026</span>
+            </div>
+            <ul class="exp-list">
+              <li>Engineered and deployed AI-assisted web workflows and responsive user interfaces during an intensive two-week product sprint.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Web Development Intern</h3>
+                <p class="org">IINFOKIDAA Solutions Pvt. Ltd.</p>
+              </div>
+              <span class="time-badge">Jun 2025 – Jul 2025</span>
+            </div>
+            <ul class="exp-list">
+              <li>Developed a full-stack <strong>EV Battery Swap Booking System</strong> from scratch using <strong>Flask, SQLite, Jinja2, and Bootstrap</strong>, implementing real-time slot booking and station inventory tracking.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Community Leadership &amp; Open Source</h3>
+                <p class="org">GDG Sangli • MLSC WCE • Nexus Spring of Code</p>
+              </div>
+              <span class="time-badge">2026 – Present</span>
+            </div>
+            <ul class="exp-list">
+              <li><strong>Web Development Lead — Google Developer Group (GDG) Sangli</strong> (Sep 2026 – Present): Leading web architecture and engineering standards for developer community platforms.</li>
+              <li><strong>Board Member &amp; Assistant Event Director — Microsoft Learn Student Club (MLSC), WCE</strong> (Apr 2026 – Present): Directing campus hackathons and technical workshops.</li>
+              <li><strong>Open-Source Contributor — Nexus Spring of Code (<code>nsoc/CodePulse</code>)</strong>: Implemented NestJS, Prisma, and TypeScript battle ELO rating and anti-smurf classification modules.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section dark-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading">Technical <span>Toolkit</span></h2>
+        <p class="section-sub">Languages, systems frameworks, retrieval stacks, and infrastructure tools I build with.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span>C++ (17/20)</span>
+            <span>Java (17/21)</span>
+            <span>Python</span>
+            <span>Go</span>
+            <span>C</span>
+            <span>TypeScript</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend &amp; Systems</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Spring Boot</span>
+            <span>FastAPI</span>
+            <span>NestJS</span>
+            <span>Django</span>
+            <span>Flask</span>
+            <span>Node.js / Express</span>
+            <span>gRPC</span>
+            <span>CMake</span>
+            <span>GoogleTest</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-brain"></i>
+            <h3>AI, ML &amp; Retrieval</h3>
+          </div>
+          <div class="skill-tags">
+            <span>RAG Pipelines</span>
+            <span>LangGraph</span>
+            <span>ChromaDB</span>
+            <span>FAISS</span>
+            <span>Gemini API</span>
+            <span>Claude API</span>
+            <span>Scikit-Learn</span>
+            <span>Pandas &amp; NumPy</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Frontend &amp; Web</h3>
+          </div>
+          <div class="skill-tags">
+            <span>React.js</span>
+            <span>Next.js</span>
+            <span>Angular</span>
+            <span>HTML5 &amp; CSS3</span>
+            <span>Tailwind CSS</span>
+            <span>Bootstrap</span>
+            <span>Prisma ORM</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-database"></i>
+            <h3>Databases &amp; Infra</h3>
+          </div>
+          <div class="skill-tags">
+            <span>PostgreSQL (RLS)</span>
+            <span>MySQL</span>
+            <span>SQLite</span>
+            <span>Elasticsearch</span>
+            <span>Kibana</span>
+            <span>Docker</span>
+            <span>Linux (Ubuntu)</span>
+            <span>Git &amp; GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Security &amp; Verification</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Zero-Knowledge Proofs</span>
+            <span>Circom / SnarkJS</span>
+            <span>Solidity</span>
+            <span>Nmap &amp; NVD CVE</span>
+            <span>Spring Security / JWT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading">Honors &amp; <span>Achievements</span></h2>
+        <p class="section-sub">Research selections, national programs, hackathons, and competitive programming milestones.</p>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>IIT Bombay Research Shortlist</h3>
+          <p>Shortlisted for a Research Internship under <strong>Prof. Manas Thakur</strong> (CompL Research Group) focusing on compilers and Java value types.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Amazon ML Summer School '26</h3>
+          <p>Selected among top undergraduate engineering applicants nationwide for Amazon's intensive machine learning program.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h3>National Hackathon Finalist</h3>
+          <p>Finalist at <strong>Breaking Enigma 4.0</strong> (VIT Pune, Top 50 / 1,500+ teams) and <strong>GDG Sangli TechSprint</strong>.</p>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="ach-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>850+ DSA &amp; Gemini Ambassador</h3>
+          <p>Solved 850+ algorithmic problems across LeetCode &amp; CodeChef (2★); shortlisted for the <strong>Google Gemini Student Ambassador Program 2026</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section dark-alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading">Featured <span>Projects</span></h2>
+        <p class="section-sub">Systems programming, distributed consensus, zero-knowledge auditing, and multi-agent AI.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">Compilers &amp; C++17</span>
+            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub Repository">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3>AI-Syntax Compiler</h3>
+          <p class="project-desc">
+            5-stage C++17 compiler and tree-walking AST interpreter (Lexer, Recursive Descent Parser, Semantic Analyzer, Evaluator) paired with a Gemini AI diagnostic client and Python web IDE.
+          </p>
+          <div class="project-tags">
+            <span>C++17</span>
+            <span>AST &amp; Parser</span>
+            <span>libcurl</span>
+            <span>Gemini API</span>
+            <span>Python</span>
+          </div>
+          <button class="btn-link open-modal" data-project="compiler">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">Systems &amp; C++20</span>
+            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub Repository">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3>WireZero</h3>
+          <p class="project-desc">
+            Zero-copy binary protocol serializer and deserializer library in C++20 leveraging variadic template reflection for direct memory-layout mapping and sub-millisecond throughput.
+          </p>
+          <div class="project-tags">
+            <span>C++20</span>
+            <span>Templates</span>
+            <span>CMake</span>
+            <span>GoogleTest</span>
+          </div>
+          <button class="btn-link open-modal" data-project="wirezero">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">Distributed Systems</span>
+            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub Repository">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3>Raft-KV</h3>
+          <p class="project-desc">
+            Fault-tolerant distributed key-value store written in Go implementing the Raft consensus protocol, randomized election timers, log replication, and inter-node gRPC communication.
+          </p>
+          <div class="project-tags">
+            <span>Go</span>
+            <span>Raft Consensus</span>
+            <span>gRPC</span>
+            <span>Concurrency</span>
+          </div>
+          <button class="btn-link open-modal" data-project="raftkv">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">Breaking Enigma 4.0 Finalist</span>
+            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub Repository">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3>TrustTrace</h3>
+          <p class="project-desc">
+            Milestone-gated escrow and hashed financial audit platform built in 24 hours (Top 50 / 1,500+ teams) using Go backend services, Solidity smart contracts, React, and Circom/SnarkJS ZKPs.
+          </p>
+          <div class="project-tags">
+            <span>Go</span>
+            <span>Solidity</span>
+            <span>Circom / ZKPs</span>
+            <span>React</span>
+          </div>
+          <button class="btn-link open-modal" data-project="trusttrace">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">Applied AI &amp; RAG</span>
+            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub Repository">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3>Autonomous Multi-Agent Legal RAG</h3>
+          <p class="project-desc">
+            Multi-agent legal document synthesis and verification workflow powered by LangGraph, ChromaDB, and local Llama 3 models, backed by a Django REST API and Angular frontend.
+          </p>
+          <div class="project-tags">
+            <span>LangGraph</span>
+            <span>ChromaDB</span>
+            <span>Llama 3</span>
+            <span>Django</span>
+            <span>Angular</span>
+          </div>
+          <button class="btn-link open-modal" data-project="legalrag">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-cat">Security &amp; Telemetry</span>
+            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub Repository">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3>CyberGuard AI &amp; Sentinel-Stream</h3>
+          <p class="project-desc">
+            Autonomous CLI penetration testing agent (Gemini function calling, Nmap, NVD CVE lookups) paired with an Isolation Forest SIEM log anomaly pipeline on Docker, Elasticsearch, and Kibana.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Nmap / NVD</span>
+            <span>Scikit-Learn</span>
+            <span>Elasticsearch</span>
+            <span>Docker</span>
+          </div>
+          <button class="btn-link open-modal" data-project="security">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-heading">Get In <span>Touch</span></h2>
+        <p class="section-sub">Open to 2027 software engineering internships, systems research collaborations, and open-source projects.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Contact Information</h3>
+          <p class="contact-lead">Feel free to reach out directly via email or connect on GitHub, LinkedIn, and competitive programming profiles.</p>
+
+          <div class="contact-list">
+            <a href="mailto:soniananvani7@gmail.com" class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <strong>soniananvani7@gmail.com</strong>
+              </div>
+            </a>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span>Location</span>
+                <strong>Sangli, Maharashtra, India</strong>
+              </div>
+            </div>
+
+            <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <div>
+                <span>GitHub</span>
+                <strong>github.com/Itssonia7</strong>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/sonia-nanwani-8a8724329" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <div>
+                <span>LinkedIn</span>
+                <strong>linkedin.com/in/sonia-nanwani-8a8724329</strong>
+              </div>
+            </a>
+
+            <a href="https://leetcode.com/u/itssonia7" target="_blank" rel="noopener" class="contact-item">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <span>LeetCode &amp; CodeChef</span>
+                <strong>leetcode.com/u/itssonia7 • @its_sonia (2★)</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about an internship, research opportunity, or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Sonia<span>.dev</span></a>
+      <p>Built by Sonia Nanwani</p>
+      <p>© 2026 Sonia Nanwani. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span class="modal-badge" id="modal-category"></span>
+      <h3 id="modal-title"></h3>
+      <p class="modal-summary" id="modal-summary"></p>
+      <h4 class="modal-subhead">Architecture &amp; Engineering Highlights</h4>
+      <ul class="modal-bullets" id="modal-bullets"></ul>
+      <div class="project-tags" id="modal-tags"></div>
+      <div class="modal-footer">
+        <a href="https://github.com/Itssonia7" target="_blank" rel="noopener" class="btn btn-primary" id="modal-repo">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
