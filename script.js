@@ -194,12 +194,14 @@ document.querySelectorAll('.open-modal').forEach((btn) => {
 
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
   });
 });
 
 const closeModal = () => {
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
 };
 
 modalClose.addEventListener('click', closeModal);
